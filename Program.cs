@@ -28,7 +28,6 @@ async Task GetAsync(HttpClient httpClient, string key)
 }
 async Task Rune()
 {
-    await Console.Out.WriteLineAsync(" Сколько потоков?");
     List<Task> tasks = new List<Task>();
     for (int k = 0; k < 20; /*Кол-во потоков*/ k++)
     {
